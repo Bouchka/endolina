@@ -1,0 +1,53 @@
+.text-grey {
+  color:$grey;
+}
+
+.text-turquoise {
+  color: $turquoise;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+
+.text-yellow {
+  color:$yellow;
+}
+
+.text-white {
+color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-poppins {
+  font-family: $title-font;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-pink {
+  background-color: #f6959c;
+}
+
+.bg-beige {
+  background-color: #E1CEC0;
+}
+
+.bg-light-gray {
+  background-color: #FCEDDA;
+}
+
+.bg-turquoise {
+  background-color: #26BABA;
+}
+
+.text-not-underlined:hover {
+  text-decoration: none;
+  color: $grey;
+}

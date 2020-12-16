@@ -1,0 +1,38 @@
+.shape:not([class*="shape-blur"]) {
+  transform: scale(2);
+}
+
+.shape-fluid-x>* {
+    width: 100%;
+    height: auto;
+}
+
+shape-bottom>* {
+    transform-origin: top center;
+}
+
+.shape>* {
+    display: block;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.shape-bottom {
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.shape {
+    position: absolute;
+    pointer-events: none;
+    color: white;
+    opacity: 0.3;
+}
+
+.text-gray-200 {
+    color: lightgrey !important;
+}

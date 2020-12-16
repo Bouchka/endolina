@@ -1,0 +1,32 @@
+.banner {
+  background-size: 60%;
+  background-position: center;
+  position: relative;
+  padding: 150px 0;
+  height: 600px;
+  overflow: hidden;
+
+  .banner-image{
+    position: absolute;
+    top: 35px;
+    right: 128px;
+  }
+}
+
+.banner h1 {
+  margin: 0;
+  color: $turquoise;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  font-family: $title-font;
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.banner p {
+  font-size: 22px;
+  color: grey;
+  opacity: .7;
+  margin-bottom: 32px;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}

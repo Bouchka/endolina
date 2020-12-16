@@ -11,3 +11,33 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: rgb(249,249,249);
+  padding-bottom: 55px;
+}
+
+h1 {
+  color: $turquoise;
+  font-family: $title-font;
+}
+
+h2 {
+  color: $turquoise;
+  font-family: $title-font;
+  font-weight: 400;
+
+}
+
+h3 {
+  color: $turquoise;
+}
+
+h5 {
+  font-family: $title-font;
+  font-weight: 400;
+}
+
+.d-grid{
+  display: grid;
+}
