@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_16_101631) do
+ActiveRecord::Schema.define(version: 2020_12_16_112025) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 2020_12_16_101631) do
     t.integer "total_price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "box_id", null: false
+    t.bigint "product_id", null: false
+    t.index ["box_id"], name: "index_box_products_on_box_id"
+    t.index ["product_id"], name: "index_box_products_on_product_id"
   end
 
   create_table "boxes", force: :cascade do |t|
@@ -27,12 +31,16 @@ ActiveRecord::Schema.define(version: 2020_12_16_101631) do
     t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_boxes_on_user_id"
   end
 
   create_table "possible_answers", force: :cascade do |t|
     t.string "possible_answer_details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "question_id", null: false
+    t.index ["question_id"], name: "index_possible_answers_on_question_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -55,6 +63,19 @@ ActiveRecord::Schema.define(version: 2020_12_16_101631) do
     t.string "solution_description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "possible_answer_id", null: false
+    t.bigint "product_id", null: false
+    t.index ["possible_answer_id"], name: "index_solutions_on_possible_answer_id"
+    t.index ["product_id"], name: "index_solutions_on_product_id"
+  end
+
+  create_table "user_answers", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "possible_answer_id", null: false
+    t.bigint "user_id", null: false
+    t.index ["possible_answer_id"], name: "index_user_answers_on_possible_answer_id"
+    t.index ["user_id"], name: "index_user_answers_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -72,9 +93,12 @@ ActiveRecord::Schema.define(version: 2020_12_16_101631) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "users_answers", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
+  add_foreign_key "box_products", "boxes"
+  add_foreign_key "box_products", "products"
+  add_foreign_key "boxes", "users"
+  add_foreign_key "possible_answers", "questions"
+  add_foreign_key "solutions", "possible_answers"
+  add_foreign_key "solutions", "products"
+  add_foreign_key "user_answers", "possible_answers"
+  add_foreign_key "user_answers", "users"
 end
