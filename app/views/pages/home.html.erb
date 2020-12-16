@@ -1,2 +1,91 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="bg-beige">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div style="z-index: 3; width: 60vw;">
+      <h1 class="text-turquoise-200" style="font-size: 3.5vw ">Reclaim your inner cycle</h1>
+      <h3 class="text-white mt-5" style="line-height: 1.5; font-size: 23px;"> We bring together the power of Technology & Nature to deliver the best menstrual solutions for <span class="bg-yellow pl-2 pr-2">your body</span> </h3>
+      <%= link_to "Take the period quizz", new_user_registration_path, class: "btn-yellow d-block text-fit mt-5" %>
+    </div>
+
+    <%= image_tag 'Woman-flower.png', class: "banner-image"%>
+
+    <!-- <a class="btn btn-flat" href="#">Request a Demo</a> -->
+  </div>
+</section>
+
+
+
+<div class="position-relative mt-n8">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-turquoise-200">
+    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"></path></svg>
+  </div>
+</div>
+
+<section class="py-8 pt-8 py-md-12 border-bottom bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up">
+
+        <div class="bg-white rounded p-4">
+          <div class="icon text-primary mb-3">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f6959c" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </div>
+
+              <!-- Heading -->
+          <h3>
+            Knowledge is Power
+          </h3>
+
+              <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            We use the most advanced modern & traditional <strong>knowledge</strong> to maximise your energy along your cycle - and help you act as the <strong>powerful creator</strong> you are born to be.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+
+        <div class="bg-white rounded p-4">
+          <div class="icon text-primary mb-3">
+                <!-- <i class="fas fa-crosshairs" style="font-size: 1.5rem;"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f6959c" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round"><path d="M3 20h18L12 4z"/></svg>
+          </div>
+
+              <!-- Heading -->
+          <h3>
+            More than a Body
+          </h3>
+
+              <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Visible or not, <strong>your pain is valid</strong>. We go beyond the old assumption that you are just flesh and hormones - taking a <strong>holistic approach</strong> to maximise the relief you deserve.
+          </p>
+        </div>
+            <!-- Icon -->
+
+      </div>
+
+      <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="bg-white rounded p-4">
+          <div class="icon text-primary mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f6959c" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+
+              <!-- Heading -->
+          <h3>
+            Honoring our Nature
+          </h3>
+
+              <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Our bodies are inherently part of Nature - she is resilient and knows her way to balance. We only deliver menstrual solutions that  <strong>respect your body & its natural flow</strong>.
+          </p>
+        </div>
+
+
+      </div>
+
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
