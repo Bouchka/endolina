@@ -66,202 +66,202 @@ possible_answers = [
   },
 
   {
-    possible_answer_detail: 'Yes, but I want to stop',
+    possible_answer_description: 'Yes, but I want to stop',
     question_id: Question.where(question_tag: 'hormone').ids[0],
   },
 
   {
-    possible_answer_detail: 'Not for the moment',
+    possible_answer_description: 'Not for the moment',
     question_id: Question.where(question_tag: 'hormone').ids[0],
   },
 
   {
-    possible_answer_detail: 'No, never again',
+    possible_answer_description: 'No, never again',
     question_id: Question.where(question_tag: 'hormone').ids[0],
   },
 
   {
-    possible_answer_detail: 'No, never',
+    possible_answer_description: 'No, never',
     question_id: Question.where(question_tag: 'hormone').ids[0],
   },
 
   {
-    possible_answer_detail: 'More than 28 days',
+    possible_answer_description: 'More than 28 days',
     question_id: Question.where(question_tag: 'period').ids[0],
   },
 
   {
-    possible_answer_detail: '21-28 days',
+    possible_answer_description: '21-28 days',
     question_id: Question.where(question_tag: 'period').ids[0],
   },
 
   {
-    possible_answer_detail: 'Less than 21 days',
+    possible_answer_description: 'Less than 21 days',
     question_id: Question.where(question_tag: 'period').ids[0],
   },
 
   {
-    possible_answer_detail: 'Irregular',
+    possible_answer_description: 'Irregular',
     question_id: Question.where(question_tag: 'period').ids[0],
   },
 
   {
-    possible_answer_detail: 'No periods',
+    possible_answer_description: 'No periods',
     question_id: Question.where(question_tag: 'period').ids[0],
   },
 
   {
-    possible_answer_detail: 'Light',
+    possible_answer_description: 'Light',
     question_id: Question.where(question_tag: 'flow').ids[0],
   },
 
   {
-    possible_answer_detail: 'Normal',
+    possible_answer_description: 'Normal',
     question_id: Question.where(question_tag: 'flow').ids[0],
   },
 
   {
-    possible_answer_detail: 'Heavy',
+    possible_answer_description: 'Heavy',
     question_id: Question.where(question_tag: 'flow').ids[0],
   },
 
   {
-    possible_answer_detail: 'Irregular',
+    possible_answer_description: 'Irregular',
     question_id: Question.where(question_tag: 'flow').ids[0],
   },
 
   {
-    possible_answer_detail: 'Menstrual pads',
+    possible_answer_description: 'Menstrual pads',
     question_id: Question.where(question_tag: 'protection').ids[0],
   },
 
   {
-    possible_answer_detail: 'Tampons',
+    possible_answer_description: 'Tampons',
     question_id: Question.where(question_tag: 'protection').ids[0],
   },
 
   {
-    possible_answer_detail: 'Menstrual cup',
+    possible_answer_description: 'Menstrual cup',
     question_id: Question.where(question_tag: 'protection').ids[0],
   },
 
   {
-    possible_answer_detail: 'Absorbing underwear',
+    possible_answer_description: 'Absorbing underwear',
     question_id: Question.where(question_tag: 'protection').ids[0],
   },
 
   {
-    possible_answer_detail: 'Reusable pads',
+    possible_answer_description: 'Reusable pads',
     question_id: Question.where(question_tag: 'protection').ids[0],
   },
 
   {
-    possible_answer_detail: 'Others',
+    possible_answer_description: 'Others',
     question_id: Question.where(question_tag: 'protection').ids[0],
   },
 
   {
-    possible_answer_detail: 'Cramps',
+    possible_answer_description: 'Cramps',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Abdominal pain',
+    possible_answer_description: 'Abdominal pain',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Bloating',
+    possible_answer_description: 'Bloating',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Inflammation',
+    possible_answer_description: 'Inflammation',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Digestive disorders',
+    possible_answer_description: 'Digestive disorders',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Pelvic & lombar pain',
+    possible_answer_description: 'Pelvic & lombar pain',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Mood disorders',
+    possible_answer_description: 'Mood disorders',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Skin disorders',
+    possible_answer_description: 'Skin disorders',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Fatigue',
+    possible_answer_description: 'Fatigue',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Irregular bleeding',
+    possible_answer_description: 'Irregular bleeding',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Urinary disorders',
+    possible_answer_description: 'Urinary disorders',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Dyspaneuria',
+    possible_answer_description: 'Dyspaneuria',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Infertility',
+    possible_answer_description: 'Infertility',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Hot flushes',
+    possible_answer_description: 'Hot flushes',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Other',
+    possible_answer_description: 'Other',
     question_id: Question.where(question_tag: 'trouble').ids[0],
   },
 
   {
-    possible_answer_detail: 'Endometriosis',
+    possible_answer_description: 'Endometriosis',
     question_id: Question.where(question_tag: 'condition').ids[0],
   },
 
   {
-    possible_answer_detail: 'Policyctic Orarian Sydrom',
+    possible_answer_description: 'Policyctic Orarian Sydrom',
     question_id: Question.where(question_tag: 'condition').ids[0],
   },
 
   {
-    possible_answer_detail: 'Adenomyosis',
+    possible_answer_description: 'Adenomyosis',
     question_id: Question.where(question_tag: 'condition').ids[0],
   },
 
   {
-    possible_answer_detail: 'Pelvic Inflamamatory Disease',
+    possible_answer_description: 'Pelvic Inflamamatory Disease',
     question_id: Question.where(question_tag: 'condition').ids[0],
   },
 
   {
-    possible_answer_detail: 'No, but I suspect it',
+    possible_answer_description: 'No, but I suspect it',
     question_id: Question.where(question_tag: 'condition').ids[0],
   },
 
   {
-    possible_answer_detail: 'None',
+    possible_answer_description: 'None',
     question_id: Question.where(question_tag: 'condition').ids[0],
   },
 ]
