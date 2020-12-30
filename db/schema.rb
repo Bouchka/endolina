@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_16_112025) do
+ActiveRecord::Schema.define(version: 2020_12_30_155006) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,10 +36,10 @@ ActiveRecord::Schema.define(version: 2020_12_16_112025) do
   end
 
   create_table "possible_answers", force: :cascade do |t|
-    t.string "possible_answer_details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "question_id", null: false
+    t.string "possible_answer_description"
     t.index ["question_id"], name: "index_possible_answers_on_question_id"
   end
 
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2020_12_16_112025) do
     t.string "question_description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "question_tag"
   end
 
   create_table "solutions", force: :cascade do |t|
@@ -89,6 +90,7 @@ ActiveRecord::Schema.define(version: 2020_12_16_112025) do
     t.string "first_name"
     t.string "last_name"
     t.string "country"
+    t.string "date_of_birth"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
